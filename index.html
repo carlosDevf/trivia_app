@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1 class="title has-text-white">Trivia APP</h1>
+      <main>
+        <form id="addProductForm" class="form">
+          <input required name="title" class="input" type="text" placeholder="Añade un titulo" />
+          <label class="label has-text-white">
+            Precio del producto
+            <input name="price" class="input" type="number" />
+          </label>
+          <textarea class="textarea" name="description">
+            Añade la descripción de tu producto
+          </textarea>
+          <input required class="input" name="image" type="text" placeholder="añade la url de tu imagen" />
+          <div class="select">
+            <select name="category">
+              <option>Select dropdown</option>
+              <option value="electronic">electronic</option>
+            </select>
+          </div>
+          <button class="button is-danger">Guardar</button>
+        </form>
+        <button id="updateProduct" class="button is-danger">Actualizar</button>
+      </main>     
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
